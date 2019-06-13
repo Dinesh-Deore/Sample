@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       print("dsds")
+        print("dsds")
+
         // Do any additional setup after loading the view.
     }
 
