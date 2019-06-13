@@ -13,7 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       print("dsds")
-print("sds")
+      print("sds")
+      print("sds")
+        print("dsds")
+        print("sds")
         print("sds")
 
         // Do any additional setup after loading the view.
