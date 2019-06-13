@@ -6,10 +6,11 @@ xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone X
 before_install:
   - env
   - locale
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - xcpretty --version
+  #- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  #- xcpretty --version
   - xcodebuild -version
   - xcodebuild -showsdks
 script:
  - xcodebuild clean build -project Sample.xcodeproj -scheme Sample -sdk iphonesimulator -configuration Debug
  #- set -o pipefail && xcodebuild -project Sample.xcodeproj -scheme Sample -destination platform\=iOS\ Simulator,OS\=12.1,name\=iPhone\ X build test | xcpretty
+ - xcodebuild clean build test -project Sample.xcodeproj -scheme SampleTests -sdk iphonesimulator -destination platform=iOS Simulator,OS\=12.1,name\=iPhone\ X -configuration Debug GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES

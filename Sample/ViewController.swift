@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       //onal setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
 
 
 }
