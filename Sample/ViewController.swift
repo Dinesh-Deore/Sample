@@ -14,6 +14,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
       print("dsds")
 print("sds")
+        print("sds")
+
         // Do any additional setup after loading the view.
     }
 
